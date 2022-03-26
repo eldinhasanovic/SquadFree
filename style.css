@@ -3,10 +3,39 @@
   margin: 0;
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+}
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  background: rgba(255, 255, 255, 0.2);
+}
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+#header.header-transparent {
+  background: transparent;
+}
+#header.header-scrolled {
+  background: rgba(55, 142, 181, 0.9);
+  padding: 12px;
 }
 a {
   text-decoration: none;
@@ -32,7 +61,7 @@ a {
   transition: all 0.5s;
   z-index: 10;
   transition: all 0.5s;
-  padding: 24px 0;
+  padding: 24px 70px;
   background: rgba(103, 176, 209, 0.8);
 }
 .navc {
@@ -79,4 +108,71 @@ a {
   color: #fff;
   white-space: nowrap;
   transition: 0.3s;
+}
+.navbar li:hover {
+  color: #0d6efd;
+}
+.naslov {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  #header.header-scrolled {
+    padding: 15px 0;
+  }
+}
+#home {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)),
+    url(https://bootstrapmade.com/demo/templates/Squadfree/assets/img/hero-bg.jpg)
+      top center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: -90px;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#home h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: -1px 0 2px #2f4d5a;
+}
+#home h2 {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: -1px 0 2px #2f4d5a;
+}
+#home .dugme1 {
+  font-size: 36px;
+  display: inline-block;
+  padding: 4px 0;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+  margin: 10px;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.dugme1:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.dugme1:hover i {
+  transition: 0.2s;
+  margin-top: 15px;
 }
