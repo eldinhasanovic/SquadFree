@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 h1,
 h2,
 h3,
@@ -175,4 +178,50 @@ a {
 .dugme1:hover i {
   transition: 0.2s;
   margin-top: 15px;
+}
+#main {
+  margin-top: 90px;
+}
+#about {
+  background: url(https://bootstrapmade.com/demo/templates/Squadfree/assets/img/about-bg.jpg)
+    center center no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
+#about .container {
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+}
+.about .content {
+  padding: 30px 30px 30px 0;
+}
+#about .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  color: #2f4d5a;
+  margin-bottom: 30px;
+}
+#about .content p {
+  margin-bottom: 30px;
+}
+#about .content .aboutdugme {
+  display: inline-block;
+  background: #67b0d1;
+  padding: 6px 44px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+  position: relative;
+}
+.strelica {
+  font-size: 14px;
+  margin-left: 15px;
+  margin-right: 0px;
 }
